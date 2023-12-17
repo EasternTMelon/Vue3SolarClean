@@ -1,6 +1,6 @@
 <template>
 
-  <div class="common-layout">
+  <div class="app">
 
     <el-container>
       <el-aside width="750px">
@@ -148,6 +148,10 @@
     </el-container>
   </div>
 
+  <!-- <div>
+    <img :src="logoPath" alt="Logo" />
+  </div> -->
+
 </template>
 
 <script>
@@ -210,6 +214,7 @@ export default {
       apiResponse: {
       data: [], //init
       },
+      // logoPath: require('@/assets/logo.png') // 請注意路徑
     };
   },
 
@@ -579,6 +584,15 @@ async resetCardColors4() {
   margin-top:auto;
 }
 
+.app {
+  background-image: url('@/assets/solar2.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  /* 其他背景相關屬性，如background-position等，可以根據需求自行設置 */
+  width: 100%;
+  height: 100vh; 
+  /* 其他樣式屬性 */
+}
 
 </style>
 
